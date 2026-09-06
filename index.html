@@ -365,6 +365,19 @@ nav.tabs::-webkit-scrollbar{display:none}
 .tocpanel button{display:block;width:100%;text-align:left;background:none;border:0;border-radius:9px;padding:9px 11px;font-family:var(--sans);font-size:14px;color:var(--text);cursor:pointer}
 .tocpanel button:hover{background:var(--card-2)}
 .tocpanel button.cur{color:var(--accent-ink);font-weight:700;background:var(--card-2)}
+
+/* diagrams */
+.dg{width:100%;height:auto;display:block;margin:12px 0 4px;font-family:var(--sans);overflow:visible}
+.dg text{fill:var(--heading)}
+.dg .mut{fill:var(--text-soft)}
+.dg .wht{fill:#fff}
+.dg .gld{fill:var(--gold)}
+.dg .fn{fill:var(--navy)}
+.dg .fc2{fill:var(--card-2)}
+.dg .sl{stroke:var(--line);fill:none}
+.dg .sg{stroke:var(--gold);fill:none}
+.dg .b{font-weight:700}
+.dgcap{text-align:center;color:var(--text-soft);font-size:12px;font-family:var(--serif);margin:2px 0 8px}
 </style>
 
 <div class="wrap">
@@ -465,6 +478,7 @@ nav.tabs::-webkit-scrollbar{display:none}
     <div class="card" style="margin-top:16px">
       <h3>為什麼是這四件事？</h3>
       <p class="hint">一次到位，照顧的決定權才真正在自己手上</p>
+      <svg class="dg" viewBox="0 0 340 210" role="img" aria-label="四塊拼圖關係圖"><rect x="8" y="8" width="152" height="88" rx="12" class="fc2"/><rect x="8" y="8" width="152" height="88" rx="12" class="sl"/><text x="26" y="48" class="gld b" font-size="22">錢</text><text x="56" y="42" class="b fn" font-size="12">長照保險</text><text x="24" y="72" class="mut" font-size="10">準備照顧現金流</text><rect x="180" y="8" width="152" height="88" rx="12" class="fc2"/><rect x="180" y="8" width="152" height="88" rx="12" class="sl"/><text x="198" y="48" class="gld b" font-size="22">管</text><text x="228" y="42" class="b fn" font-size="12">信託規劃</text><text x="196" y="72" class="mut" font-size="10">專款專用</text><rect x="8" y="112" width="152" height="88" rx="12" class="fc2"/><rect x="8" y="112" width="152" height="88" rx="12" class="sl"/><text x="26" y="152" class="gld b" font-size="22">人</text><text x="56" y="146" class="b fn" font-size="12">意定監護</text><text x="24" y="176" class="mut" font-size="10">由誰照顧與決定</text><rect x="180" y="112" width="152" height="88" rx="12" class="fc2"/><rect x="180" y="112" width="152" height="88" rx="12" class="sl"/><text x="198" y="152" class="gld b" font-size="22">願</text><text x="228" y="146" class="b fn" font-size="12">預立醫療</text><text x="196" y="176" class="mut" font-size="10">我的醫療我做主</text><circle cx="170" cy="104" r="22" class="gld"/><text x="170" y="101" class="wht b" font-size="10" text-anchor="middle">完整</text><text x="170" y="114" class="wht b" font-size="10" text-anchor="middle">規劃</text></svg><div class="dgcap">錢、管、人、願——四塊拼齊才完整</div>
       <div class="rows">
         <div class="row"><div class="n">錢</div><div class="bd"><b>長照保險｜準備照顧的現金流</b><span>失能失智時，用保險金支應每月照護費用。</span></div></div>
         <div class="row"><div class="n">管</div><div class="bd"><b>信託規劃｜這筆錢專款專用</b><span>透過制度控制流速與流向，確保錢用在自己身上。</span></div></div>
@@ -579,6 +593,7 @@ nav.tabs::-webkit-scrollbar{display:none}
         <div class="step"><div class="rail"><div class="dot">2</div></div><div class="bd"><b>既有保單盤點</b><span>檢視現有保單能理賠多少長照給付，兩者相減即為缺口。</span></div></div>
       </div>
       <div class="callout center" style="margin:8px 0 0"><p>實際需求 − 既存保障 ＝ 長照保障缺口</p></div>
+      <svg class="dg" viewBox="0 0 340 176" role="img" aria-label="長照缺口長條圖"><line x1="20" y1="140" x2="320" y2="140" class="sl"/><rect x="30" y="32" width="58" height="108" class="fn"/><rect x="141" y="104" width="58" height="36" class="fc2"/><rect x="141" y="104" width="58" height="36" class="sl"/><rect x="252" y="68" width="58" height="72" class="gld"/><text x="59" y="26" class="b" font-size="10.5" text-anchor="middle">約900萬</text><text x="170" y="98" class="b" font-size="10.5" text-anchor="middle">約300萬</text><text x="281" y="62" class="b" font-size="10.5" text-anchor="middle">約600萬</text><text x="59" y="156" class="mut" font-size="10" text-anchor="middle">照護總需求</text><text x="170" y="156" class="mut" font-size="10" text-anchor="middle">既有保障</text><text x="281" y="156" class="mut" font-size="10" text-anchor="middle">長照缺口</text></svg><div class="dgcap">差距就是要補足的長照缺口（數字為示意）</div>
     </div>
 
     <div class="card calc">
@@ -717,6 +732,7 @@ nav.tabs::-webkit-scrollbar{display:none}
 
     <div class="card">
       <h3>信託機制：錢，這樣流動</h3>
+      <svg class="dg" viewBox="0 0 340 158" role="img" aria-label="信託金流圖"><rect x="110" y="14" width="120" height="40" rx="8" class="fc2"/><rect x="110" y="14" width="120" height="40" rx="8" class="sl"/><text x="170" y="32" class="b fn" font-size="10.5" text-anchor="middle">信託監察人</text><text x="170" y="46" class="mut" font-size="9" text-anchor="middle">第三方把關</text><line x1="170" y1="54" x2="170" y2="92" class="sg" stroke-width="2"/><polygon points="166,90 170,96 174,90" class="gld"/><text x="184" y="76" class="mut" font-size="9">把關</text><rect x="6" y="96" width="92" height="50" rx="8" class="fc2"/><rect x="6" y="96" width="92" height="50" rx="8" class="sl"/><text x="52" y="120" class="b fn" font-size="11" text-anchor="middle">委託人</text><text x="52" y="136" class="mut" font-size="9.5" text-anchor="middle">你</text><rect x="124" y="96" width="92" height="50" rx="8" class="fc2"/><rect x="124" y="96" width="92" height="50" rx="8" class="sl"/><text x="170" y="120" class="b fn" font-size="11" text-anchor="middle">受託人</text><text x="170" y="136" class="mut" font-size="9.5" text-anchor="middle">信任機構</text><rect x="238" y="96" width="92" height="50" rx="8" class="fc2"/><rect x="238" y="96" width="92" height="50" rx="8" class="sl"/><text x="284" y="120" class="b fn" font-size="11" text-anchor="middle">受益人</text><text x="284" y="136" class="mut" font-size="9.5" text-anchor="middle">想照顧的人</text><line x1="98" y1="121" x2="120" y2="121" class="sg" stroke-width="2"/><polygon points="118,117 124,121 118,125" class="gld"/><line x1="216" y1="121" x2="238" y2="121" class="sg" stroke-width="2"/><polygon points="236,117 242,121 236,125" class="gld"/><text x="111" y="113" class="mut" font-size="9" text-anchor="middle">託付</text><text x="229" y="113" class="mut" font-size="9" text-anchor="middle">撥付</text></svg><div class="dgcap">錢的流向：專款專用、有人把關</div>
       <div class="flow">
         <div class="step"><div class="rail"><div class="dot">委</div><div class="line"></div></div><div class="bd"><b>委託人（你）</b><span>託付資產與心願　—　信任託付</span></div></div>
         <div class="step"><div class="rail"><div class="dot">託</div><div class="line"></div></div><div class="bd"><b>受託人（信任機構）</b><span>依契約執行承諾　—　專款專用</span></div></div>
@@ -899,6 +915,7 @@ nav.tabs::-webkit-scrollbar{display:none}
 
     <div class="card">
       <h3>時間軸：四個人生階段怎麼接棒</h3>
+      <svg class="dg" viewBox="0 0 340 104" role="img" aria-label="一條龍時間軸"><line x1="55" y1="52" x2="285" y2="52" class="sg" stroke-width="2"/><circle cx="55" cy="52" r="11" class="fn"/><circle cx="55" cy="52" r="11" class="sg" stroke-width="2"/><text x="55" y="56" class="wht b" font-size="12" text-anchor="middle">1</text><text x="55" y="24" class="b" font-size="11" text-anchor="middle">健康期</text><text x="55" y="78" class="mut" font-size="9.5" text-anchor="middle">四份文件</text><text x="55" y="92" class="mut" font-size="9.5" text-anchor="middle">同步佈局</text><circle cx="132" cy="52" r="11" class="fn"/><circle cx="132" cy="52" r="11" class="sg" stroke-width="2"/><text x="132" y="56" class="wht b" font-size="12" text-anchor="middle">2</text><text x="132" y="24" class="b" font-size="11" text-anchor="middle">失能期</text><text x="132" y="78" class="mut" font-size="9.5" text-anchor="middle">信託撥款</text><text x="132" y="92" class="mut" font-size="9.5" text-anchor="middle">監護生效</text><circle cx="208" cy="52" r="11" class="fn"/><circle cx="208" cy="52" r="11" class="sg" stroke-width="2"/><text x="208" y="56" class="wht b" font-size="12" text-anchor="middle">3</text><text x="208" y="24" class="b" font-size="11" text-anchor="middle">醫療末期</text><text x="208" y="78" class="mut" font-size="9.5" text-anchor="middle">預立醫療</text><text x="208" y="92" class="mut" font-size="9.5" text-anchor="middle">依願執行</text><circle cx="285" cy="52" r="11" class="fn"/><circle cx="285" cy="52" r="11" class="sg" stroke-width="2"/><text x="285" y="56" class="wht b" font-size="12" text-anchor="middle">4</text><text x="285" y="24" class="b" font-size="11" text-anchor="middle">身故後</text><text x="285" y="78" class="mut" font-size="9.5" text-anchor="middle">保險金</text><text x="285" y="92" class="mut" font-size="9.5" text-anchor="middle">進信託</text></svg><div class="dgcap">四階段接棒：每一步都有支柱接手</div>
       <div class="flow">
         <div class="step"><div class="rail"><div class="dot">健</div><div class="line"></div></div><div class="bd"><span class="phase-tag">健康期 · 規劃期</span><b>四份文件同步佈局</b><span>壽險＋長照／失能＋實支實付；同步簽信託、意定監護公證、預立醫療。</span></div></div>
         <div class="step"><div class="rail"><div class="dot">失</div><div class="line"></div></div><div class="bd"><span class="phase-tag">失能／失智期</span><b>意定監護生效，信託按月撥款</b><span>長照／失能扶助金進安養信託專戶，按月撥付照護費。</span></div></div>
