@@ -378,6 +378,18 @@ nav.tabs::-webkit-scrollbar{display:none}
 .dg .sg{stroke:var(--gold);fill:none}
 .dg .b{font-weight:700}
 .dgcap{text-align:center;color:var(--text-soft);font-size:12px;font-family:var(--serif);margin:2px 0 8px}
+
+/* scene icon rows & row icons */
+.scene ul.il{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px}
+.scene ul.il li{display:flex;gap:11px;align-items:center}
+.scene .b2{flex:none;width:34px;height:34px;border-radius:50%;display:grid;place-items:center}
+.scene.good .b2{background:rgba(255,255,255,.14)}
+.scene.bad .b2{background:#fff;border:1px solid var(--line)}
+.scene .b2 svg{width:18px;height:18px;fill:none;stroke-width:1.7}
+.scene.good .b2 svg{stroke:var(--gold)}
+.scene.bad .b2 svg{stroke:var(--navy)}
+.scene ul.il li>span:last-child{font-size:12.5px;line-height:1.35}
+.row .n svg{width:15px;height:15px;fill:none;stroke:var(--accent-ink);stroke-width:1.8}
 </style>
 
 <div class="wrap">
@@ -541,21 +553,21 @@ nav.tabs::-webkit-scrollbar{display:none}
       <p class="hint">決定差距的，不是孝心，是每個月能動用的照顧預算。</p>
       <div class="compare">
         <div class="scene good">
-          <h4>有規劃　單人房＋電動輪椅</h4>
-          <ul>
-            <li>獨立空間、採光良好</li>
-            <li>可自主移動，行動自由</li>
-            <li>一對一專業照顧</li>
-            <li>每月約 6 萬元起</li>
+          <h4>有規劃　單人房</h4>
+          <ul class="il">
+            <li><span class="b2"><svg viewBox="0 0 24 24"><path d="M7 3h10v18H7z"/><path d="M13 12h1"/></svg></span><span>獨立空間、採光良好</span></li>
+            <li><span class="b2"><svg viewBox="0 0 24 24"><circle cx="12" cy="4.5" r="2"/><path d="M12 7v7M12 10l-3 8M12 10l3 8M8 9h8"/></svg></span><span>可自主移動，行動自由</span></li>
+            <li><span class="b2"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.5-7-10a4 4 0 018-1 4 4 0 018 1c0 5.5-9 10-9 10z"/></svg></span><span>一對一專業照顧</span></li>
+            <li><span class="b2"><svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M16 12h3"/></svg></span><span>每月約 6 萬元起</span></li>
           </ul>
         </div>
         <div class="scene bad">
-          <h4>沒規劃　六人房＋手動輪椅</h4>
-          <ul>
-            <li>多人共用、隱私有限</li>
-            <li>移動需人推，依賴他人</li>
-            <li>照顧人力共用，家人輪班</li>
-            <li>每月約 3～5 萬元</li>
+          <h4>沒規劃　六人房</h4>
+          <ul class="il">
+            <li><span class="b2"><svg viewBox="0 0 24 24"><circle cx="8" cy="9" r="2.5"/><circle cx="16" cy="9" r="2.5"/><path d="M3 19c0-3 2-4 5-4M21 19c0-3-2-4-5-4"/></svg></span><span>多人共用、隱私有限</span></li>
+            <li><span class="b2"><svg viewBox="0 0 24 24"><circle cx="9" cy="4" r="1.6"/><path d="M9 6v6h6l2.5 5"/><circle cx="9" cy="15" r="5"/></svg></span><span>移動需人推，依賴他人</span></li>
+            <li><span class="b2"><svg viewBox="0 0 24 24"><path d="M4 11a8 8 0 0113-5l3 2"/><path d="M20 13a8 8 0 01-13 5l-3-2"/></svg></span><span>照顧人力共用，家人輪班</span></li>
+            <li><span class="b2"><svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M16 12h3"/></svg></span><span>每月約 3～5 萬元</span></li>
           </ul>
         </div>
       </div>
@@ -726,10 +738,10 @@ nav.tabs::-webkit-scrollbar{display:none}
     <div class="card">
       <h3>辛苦一輩子的錢，會遇到四道關卡</h3>
       <div class="rows">
-        <div class="row"><div class="n">關</div><div class="bd"><b>人在，錢不在</b><span>判斷力下降後，這筆錢會不會成為別人眼中的獵物？</span></div></div>
-        <div class="row"><div class="n">關</div><div class="bd"><b>人在，不由己</b><span>重病昏迷時，家人能順利從我的帳戶提領醫療費嗎？</span></div></div>
-        <div class="row"><div class="n">關</div><div class="bd"><b>情在，難保證</b><span>先把錢轉給最信任的家人，他真的會照期望照顧我嗎？</span></div></div>
-        <div class="row"><div class="n">關</div><div class="bd"><b>錢在，人不在</b><span>身故後留錢給孩子，會不會被揮霍、被詐騙？</span></div></div>
+        <div class="row"><div class="n"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="11" rx="2"/><path d="M4 4l16 16"/></svg></div><div class="bd"><b>人在，錢不在</b><span>判斷力下降後，這筆錢會不會成為別人眼中的獵物？</span></div></div>
+        <div class="row"><div class="n"><svg viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 018 0v3"/></svg></div><div class="bd"><b>人在，不由己</b><span>重病昏迷時，家人能順利從我的帳戶提領醫療費嗎？</span></div></div>
+        <div class="row"><div class="n"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.5-7-10a4 4 0 018-1 4 4 0 018 1c0 5.5-9 10-9 10z"/></svg></div><div class="bd"><b>情在，難保證</b><span>先把錢轉給最信任的家人，他真的會照期望照顧我嗎？</span></div></div>
+        <div class="row"><div class="n"><svg viewBox="0 0 24 24"><rect x="4" y="8" width="16" height="11" rx="2"/><path d="M12 8v11"/><path d="M4 4l16 16"/></svg></div><div class="bd"><b>錢在，人不在</b><span>身故後留錢給孩子，會不會被揮霍、被詐騙？</span></div></div>
       </div>
     </div>
 
@@ -814,11 +826,11 @@ nav.tabs::-webkit-scrollbar{display:none}
       <div class="compare">
         <div class="scene bad">
           <h4>沒準備</h4>
-          <ul><li>法官指定，未必了解您的家庭</li><li>家族為爭產與責任對立</li><li>程序拉長，醫療財產卡住</li></ul>
+          <ul class="il"><li><span class="b2"><svg viewBox="0 0 24 24"><path d="M5 21h9"/><path d="M8 16l7-7"/><path d="M11 5l6 6"/><path d="M9 7l6 6"/></svg></span><span>法官指定，未必了解您的家庭</span></li><li><span class="b2"><svg viewBox="0 0 24 24"><circle cx="7.5" cy="9" r="2.3"/><circle cx="16.5" cy="9" r="2.3"/><path d="M3 19c0-3 2-4 4.5-4M21 19c0-3-2-4-4.5-4"/><path d="M12 12l1.5 3"/></svg></span><span>家族為爭產與責任對立</span></li><li><span class="b2"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></span><span>程序拉長，醫療財產卡住</span></li></ul>
         </div>
         <div class="scene good">
           <h4>有準備</h4>
-          <ul><li>自己指定最信任的人代言</li><li>責任歸屬明確，家人安心</li><li>公證建檔，效力明確</li></ul>
+          <ul class="il"><li><span class="b2"><svg viewBox="0 0 24 24"><circle cx="10" cy="8" r="3"/><path d="M4 19c0-3.2 2.7-5 6-5"/><path d="M14.5 13.5l2 2 4-4"/></svg></span><span>自己指定最信任的人代言</span></li><li><span class="b2"><svg viewBox="0 0 24 24"><circle cx="7.5" cy="9" r="2.3"/><circle cx="16.5" cy="9" r="2.3"/><path d="M3 19c0-3 2-4 4.5-4M21 19c0-3-2-4-4.5-4"/><path d="M10.5 13l1.5 1.5L13.5 13"/></svg></span><span>責任歸屬明確，家人安心</span></li><li><span class="b2"><svg viewBox="0 0 24 24"><path d="M6 3h9l3 3v15H6z"/><path d="M9 12l2 2 4-4"/></svg></span><span>公證建檔，效力明確</span></li></ul>
         </div>
       </div>
       <div class="callout center" style="margin:12px 0 0"><p>差別不在運氣，而在有沒有提早準備。</p></div>
